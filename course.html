@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">UDDOM Skill</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="course-container">
+    
+    <div class="video-section">
+        <div class="video-box">
+            <iframe 
+                id="videoFrame" 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/WNeLUngb-Xg" 
+                title="Course Video" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="course-info">
+            <h1 id="currentVideoTitle">Introduction to Digital Marketing</h1>
+            <p>এই কোর্সে আপনি শিখবেন কিভাবে প্রফেশনাল বিজনেস ম্যানেজার সেটআপ করতে হয়...</p>
+            <button class="buy-btn">Buy Now - ৳2500</button>
+        </div>
+    </div> 
+    <div class="module-section">
+        <h3>Course Modules</h3>
+        <ul class="module-list" id="moduleList">
+            <p style="text-align:center;">Loading...</p>
+        </ul>
+    </div>
+    </div>    
+    
+        <div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Complete Your Enrollment</h2>
+        <p>Course: <strong>Facebook Ads Mastery</strong></p>
+        <p class="price-tag">Total: ৳2500</p>
+        
+        <div class="payment-methods">
+            <button class="pay-option" style="background:#e2136e; color:white;">Bkash</button>
+            <button class="pay-option" style="background:#f6921e; color:white;">Nagad</button>
+        </div>
+
+        <input type="text" placeholder="Your Phone Number" class="input-field">
+        <input type="text" placeholder="Transaction ID" class="input-field">
+        
+        <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+    </div>
+</div>
+
+    <script src="style.js"></script>
+</body>
+</html>

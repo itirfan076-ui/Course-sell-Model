@@ -1,0 +1,110 @@
+/* ----------- Course Page Styles ----------- */
+
+/* মেইন কন্টেইনার: পিসিতে পাশাপাশি দেখাবে */
+.course-container {
+    display: flex;
+    flex-direction: row; /* পাশাপাশি (Row) */
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* বাম পাশের ভিডিও সেকশন */
+.video-section {
+    flex: 2; /* এটি বেশি জায়গা নেবে (66%) */
+}
+
+.video-box {
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.course-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    background-color: #28a745; /* সবুজ বাটন */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%; /* মোবাইলে সুন্দর দেখানোর জন্য */
+    max-width: 250px; /* পিসিতে যাতে বেশি বড় না হয় */
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+/* ডান পাশের মডিউল সেকশন */
+.module-section {
+    flex: 1; /* এটি কম জায়গা নেবে (33%) */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: fit-content; /* কন্টেন্ট অনুযায়ী উচ্চতা হবে */
+}
+
+.module-section h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.module-list {
+    list-style: none;
+}
+
+.module-list li {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.module-list li:hover {
+    background-color: #f9f9f9;
+    color: #007bff;
+}
+
+/* ----------- Mobile Responsive (আপনার স্কেচ অনুযায়ী) ----------- */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column; /* পিসির Row এখন Column হয়ে যাবে */
+        padding: 20px;
+    }
+
+    .video-box {
+        height: 200px; /* মোবাইলে ভিডিও প্লেয়ার ছোট হবে */
+    }
+
+    .buy-btn {
+        width: 100%; /* মোবাইলে বাটন পুরো স্ক্রিন জুড়ে থাকবে */
+        max-width: 100%;
+    }
+    
+    .module-section {
+        margin-top: 20px; /* ভিডিওর নিচে একটু গ্যাপ */
+    }
+}
