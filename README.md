@@ -60,7 +60,7 @@ POST /buy-course: Updates database to unlock content
 
 Irfanul Islam
 
-Project: UDDOM (Skill Development Platform)
+Front end Developer
 
 Goal: To create a seamless learning experience for students.
 
